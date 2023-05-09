@@ -87,6 +87,9 @@ public class Board extends Thread {
 
 		JButton sounEffectsButton = new JButton();
 		sounEffectsButton.setBounds(53, 474, 89, 82);
+		sounEffectsButton.setOpaque(false);
+		sounEffectsButton.setContentAreaFilled(false);
+		sounEffectsButton.setBorderPainted(false);
 		sounEffectsButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (getSoundEffects()) {
@@ -125,6 +128,9 @@ public class Board extends Thread {
 		}
 		JButton soundtrackButton = new JButton();
 		soundtrackButton.setBounds(945, 474, 89, 69);
+		soundtrackButton.setOpaque(false);
+		soundtrackButton.setContentAreaFilled(false);
+		soundtrackButton.setBorderPainted(false);
 		soundtrackButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (getSoundtrack()) {

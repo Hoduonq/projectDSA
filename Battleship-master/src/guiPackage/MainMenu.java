@@ -39,15 +39,6 @@ public class MainMenu {
 		if (getSoundtrack()) {
 			enableMusic("sound/MenuSong.wav");
 		}
-
-		JLabel label = new JLabel();
-		try {
-			label.setIcon(new ImageIcon(ImageIO.read(ResourceLoader.load("img/title.jpg"))));
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		label.setBounds(316, 11, 500, 208);
-
 		JButton startButton = new JButton();
 		try {
 			startButton.setIcon(new ImageIcon(ImageIO.read(ResourceLoader.load("img/button-start.jpg"))));
@@ -80,6 +71,9 @@ public class MainMenu {
 
 		JButton soundEffectsButton = new JButton();
 		soundEffectsButton.setBounds(53, 274, 89, 82);
+		soundEffectsButton.setOpaque(false);
+		soundEffectsButton.setContentAreaFilled(false);
+		soundEffectsButton.setBorderPainted(false);
 		soundEffectsButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (getSoundEfffects()) {
@@ -120,6 +114,9 @@ public class MainMenu {
 
 		JButton soundtrackButton = new JButton();
 		soundtrackButton.setBounds(945, 274, 89, 69);
+		soundtrackButton.setOpaque(false);
+		soundtrackButton.setContentAreaFilled(false);
+		soundtrackButton.setBorderPainted(false);
 		soundtrackButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (getSoundtrack()) {
@@ -161,7 +158,6 @@ public class MainMenu {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 		frame.getContentPane().setLayout(null);
-		frame.getContentPane().add(label);
 		frame.getContentPane().add(startButton);
 
 		frame.getContentPane().add(exitButton);
