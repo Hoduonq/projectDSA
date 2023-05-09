@@ -62,11 +62,11 @@ public class ChooseGameOptionMenu {
 					difficultyList.setFont(new Font("Tempus Sans ITC", Font.BOLD, 44));
 					difficultyList.setBackground(Color.DARK_GRAY);
 					difficultyList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-					difficultyList.setBounds(48, 201, 177, 201);
+					difficultyList.setBounds(48, 201, 177, 130);
 					difficultyList.setModel(new AbstractListModel<String>() {
 						private static final long serialVersionUID = 1L;
 
-						String[] values = new String[] { "easy", "medium", "hard" };
+						String[] values = new String[] { "medium", "hard" };
 
 						public int getSize() {
 							return values.length;

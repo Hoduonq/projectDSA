@@ -30,9 +30,6 @@ public class Connect {
 	public static void setGameMode(String choice) {
 		if (choice.equals("pvp")) {
 			mode = 0;
-		} else if (choice.equals("easy")) {
-			levelPC = 0;
-			mode = 1;
 		} else if (choice.equals("medium")) {
 			levelPC = 1;
 			mode = 1;
