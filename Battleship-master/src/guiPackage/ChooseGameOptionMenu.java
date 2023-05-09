@@ -34,7 +34,8 @@ public class ChooseGameOptionMenu {
 
 		checkBoxPvP = new JCheckBox("PLAYER1 VS PLAYER2");
 		checkBoxPvP.setFont(new Font("Tempus Sans ITC", Font.BOLD, 40));
-		checkBoxPvP.setBackground(Color.LIGHT_GRAY);
+		checkBoxPvP.setForeground(Color.BLACK);
+		checkBoxPvP.setOpaque(false);
 		checkBoxPvP.setBounds(587, 55, 477, 99);
 		checkBoxPvP.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -50,6 +51,8 @@ public class ChooseGameOptionMenu {
 		checkBoxPvPC.setBackground(Color.LIGHT_GRAY);
 		checkBoxPvPC.setFont(new Font("Tempus Sans ITC", Font.BOLD, 40));
 		checkBoxPvPC.setBounds(24, 55, 330, 99);
+		checkBoxPvPC.setForeground(Color.BLACK);
+		checkBoxPvPC.setOpaque(false);
 		checkBoxPvPC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (checkBoxPvP.isSelected()) {
@@ -60,7 +63,7 @@ public class ChooseGameOptionMenu {
 					difficultyList = new JList<String>();
 					difficultyList.setForeground(Color.PINK);
 					difficultyList.setFont(new Font("Tempus Sans ITC", Font.BOLD, 44));
-					difficultyList.setBackground(Color.DARK_GRAY);
+					difficultyList.setBackground(Color.WHITE);
 					difficultyList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 					difficultyList.setBounds(48, 201, 177, 130);
 					difficultyList.setModel(new AbstractListModel<String>() {
